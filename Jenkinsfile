@@ -11,14 +11,6 @@ pipeline {
 
 
 
-        stage('poll scm') {
-        steps {
-
-            git 'https://github.com/king-chukwuma/test-gradle-jenkins.git'
-        }
-        }
-
-
 
         stage('build jar') {
         steps {
