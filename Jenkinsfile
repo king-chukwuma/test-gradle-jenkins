@@ -23,8 +23,7 @@ pipeline {
 
         stage('run jar') {
         steps {
-
-            sh './gradlew run'
+            sh 'java -jar build/libs/test-gradle-1.0-SNAPSHOT.jar'
         }
         }
     }
