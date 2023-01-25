@@ -1,7 +1,9 @@
 pipeline {
     agent any
 
-    tool name: '7.4', type: 'gradle'
+    tool {
+        gradle '7.4'
+    }
 
     stages {
         stage('Checkout scm') {
